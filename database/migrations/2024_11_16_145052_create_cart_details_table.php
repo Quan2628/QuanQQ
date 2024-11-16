@@ -34,8 +34,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        DB::statement('ALTER TABLE cart_details DROP CONSTRAINT ck_unit__price');
-        DB::statement('ALTER TABLE cart_details DROP CONSTRAINT ck_total__price');
+        DB::statement('ALTER TABLE cart_details DROP CONSTRAINT ck_unit_price');
+        DB::statement('ALTER TABLE cart_details DROP CONSTRAINT ck_total_price');
         Schema::dropIfExists('cart_details');
     }
 };
