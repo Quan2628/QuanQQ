@@ -2,17 +2,10 @@
 
 namespace App\Models;
 
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-=======
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 use Illuminate\Database\Eloquent\Model;
 
 class Comments extends Model
 {
-<<<<<<< HEAD
-    use HasFactory;
-=======
     //
     protected $table = 'comments';
     protected $fillable = [
@@ -43,5 +36,4 @@ class Comments extends Model
     {
         return $this->belongsTo(Comments::class, 'parent_id');
     }
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 }

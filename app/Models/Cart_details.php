@@ -2,17 +2,10 @@
 
 namespace App\Models;
 
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-=======
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 use Illuminate\Database\Eloquent\Model;
 
 class Cart_details extends Model
 {
-<<<<<<< HEAD
-    use HasFactory;
-=======
     //
     protected $table = 'cart_details';
     protected $fillable = [
@@ -29,5 +22,4 @@ class Cart_details extends Model
     {
         return $this->belongsTo(Products::class);
     }
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 }
