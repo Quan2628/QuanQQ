@@ -2,17 +2,10 @@
 
 namespace App\Models;
 
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-=======
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 use Illuminate\Database\Eloquent\Model;
 
 class Products extends Model
 {
-<<<<<<< HEAD
-    use HasFactory;
-=======
     //
     protected $table = 'products';
     protected $fillable = 
@@ -34,5 +27,4 @@ class Products extends Model
     {
         return $this->hasMany(Comments::class);
     }
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 }
