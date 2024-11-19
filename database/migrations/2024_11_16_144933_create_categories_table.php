@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
-            $table->unsignedBigInteger('parent_id')->default(null); //Dùng để tạo danh mục con
-            $table->foreign('parent_id')->references('id')->on('categories');
+            $table->string('slug')->unique();
             $table->text('description')->nullable();
             $table->timestamps();
         });

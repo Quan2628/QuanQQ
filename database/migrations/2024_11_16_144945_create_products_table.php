@@ -16,9 +16,9 @@ return new class extends Migration
             $table->id();
             $table->string('name', 255);
             $table->text('description')->nullable();
-            $table->decimal('price', 10, 2);
             $table->string('size', 5);
             $table->string('color', 30);
+            $table->decimal('price', 10, 2);
             $table->integer('stock')->default(0);
             $table->string('image'); //Đường dẫn ảnh sản phẩm
             $table->unsignedBigInteger('category_id');
