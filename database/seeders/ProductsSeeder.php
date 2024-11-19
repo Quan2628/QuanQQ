@@ -18,9 +18,13 @@ class ProductsSeeder extends Seeder
             [
                 'name'=>'Áo thun nam',
                 'description'=>'Áo thun nam, chất liệu cotton thoáng mát',
-                'price'=>'200000',
                 'size'=>'',
-            ]
+                'color'=>'',
+                'price'=>'200000',
+                'stock'=>'100',
+                'image'=>'',
+                'category_id'=>1
+            ],
         ]);
     }
 }

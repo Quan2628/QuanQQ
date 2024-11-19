@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('stock')->default(0);
             $table->string('image'); //Đường dẫn ảnh sản phẩm
             $table->unsignedBigInteger('category_id');
-            $table->timestamps();
+            // $table->timestamps();
 
             //Thiết lập khoá ngoại
             $table->foreign('category_id')->references('id')->on('categories');

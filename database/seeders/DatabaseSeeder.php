@@ -29,7 +29,10 @@ class DatabaseSeeder extends Seeder
             CartDetailsSeeder::class,
             RatingsSeeder::class,
             CommentsSeeder::class,
-            UsersSeeder::class
+            UsersSeeder::class,
+            ColorsSeeder::class,
+            SizesSeeder::class,
+            ProductVariantsSeeder::class
         ]);
     }
 }

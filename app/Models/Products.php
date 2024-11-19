@@ -12,7 +12,8 @@ class Products extends Model
     [
         'name', 'description', 'price', 'size', 'color', 'stock', 'image', 'category_id', 'created_at', 'updated_at'
     ];
-    
+    public $timestamp = false;
+
     public function cartDetails()
     {
         return $this->hasMany(Cart_details::class);
@@ -26,5 +27,15 @@ class Products extends Model
     public function comments()
     {
         return $this->hasMany(Comments::class);
+    }
+
+    public function sizes()
+    {
+        return $this->belongsToMany(Sizes::class, 'product_variants')->withPivot('quantity');
+    }
+
+    public function colors()
+    {
+        return $this->belongsToMany(Colors::class, 'product_variants')->withPivot('quantity');
     }
 }
