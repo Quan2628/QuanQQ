@@ -2,10 +2,7 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
-=======
 use App\Models\User;
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -16,7 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
@@ -34,13 +30,6 @@ class DatabaseSeeder extends Seeder
             RatingsSeeder::class,
             CommentsSeeder::class,
             UsersSeeder::class
-=======
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
->>>>>>> 5e6847e63bc83beaa0892defb3bfd290dc7bfce9
         ]);
     }
 }
