@@ -22,7 +22,7 @@ class ProductVariantsSeeder extends Seeder
                 'quantity'=>'50' 
             ],
             [
-                'product_id'=>4,
+                'product_id'=>1,
                 'size_id'=>2,
                 'color_id'=>2,
                 'quantity'=>'20' 
@@ -34,13 +34,13 @@ class ProductVariantsSeeder extends Seeder
                 'quantity'=>'45' 
             ],
             [
-                'product_id'=>3,
+                'product_id'=>1,
                 'size_id'=>1,
                 'color_id'=>5,
                 'quantity'=>'50' 
             ],
             [
-                'product_id'=>2,
+                'product_id'=>1,
                 'size_id'=>4,
                 'color_id'=>3,
                 'quantity'=>'60' 
