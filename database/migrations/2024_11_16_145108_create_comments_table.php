@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('comments', function (Blueprint $table) {
-            $table->id('comment_id');
+            $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
             $table->text('comment');  // Nội dung bình luận
             $table->unsignedBigInteger('parent_id')->nullable(); // ID bình luận cha
-            $table->foreign('parent_id')->references('comment_id')->on('comments');
+            $table->foreign('parent_id')->references('id')->on('comments');
             // $table->timestamps();
             
             $table->foreign('user_id')->references('id')->on('users');
