@@ -15,6 +15,7 @@ class UsersSeeder extends Seeder
     public function run(): void
     {
         //
+        if (!DB::table('users')->where('email', 'fanvip.1st@gmail.com')->exists()) {
         DB::table('users')->insert([
             [
                 'name'=>'Long Quân',
@@ -44,6 +45,7 @@ class UsersSeeder extends Seeder
                 'created_at'=>Carbon::now(),
                 'updated_at'=>Carbon::now()
             ]
-        ]);
+          ]);
+        }
     }
 }
