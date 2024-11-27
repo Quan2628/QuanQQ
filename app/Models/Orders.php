@@ -9,6 +9,7 @@ class Orders extends Model
     //
     protected $table = 'orders';
     protected $fillable = ['user_id', 'date_order', 'total', 'status', 'created_at', 'updated_at'];
+    public $timestamp = false;
     public function user()
     {
         return $this->belongsTo(User::class);

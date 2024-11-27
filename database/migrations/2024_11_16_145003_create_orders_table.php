@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('quantity');
             $table->decimal('total_price', 10, 2);
             $table->string('status')->nullable();
-            $table->timestamps();
+            // $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
         });
